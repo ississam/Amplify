@@ -18,7 +18,8 @@ export const listNotes = /* GraphQL */ `
     $filter: ModelTodoFilterInput
     $limit: Int
     $nextToken: String
-  ) {
+  ) 
+  {
     listNotes(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
